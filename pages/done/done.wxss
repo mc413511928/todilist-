@@ -1,0 +1,39 @@
+/* pages/done/done.wxss */
+@import "/common.wxss";
+
+page {
+    background-color: #fb8d62;
+}
+
+.todo-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.todo-content {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.todo-comment {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.todo-done {
+    text-align: right;
+}
+
+.todo-pd {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.todo-done-btn {
+    width: 60px !important;
+}
+
+.todo-done-btn .delete {
+    background-color: #fd5e53;
+}

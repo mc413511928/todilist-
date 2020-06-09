@@ -1,0 +1,23 @@
+<!--pages/done/done.wxml-->
+<view wx:if="{{!list.length}}" class="empty">任务已经全部完成啦</view>
+<block wx:else>
+    <view class="view-box" wx:for="{{list}}" wx:key="id">
+        <view class="todo-time">{{item.dateTime}}</view>
+        <view class="todo-content">
+            <!-- 可以被选中 -->
+            <text selectable>{{item.content}}</text>
+        </view>
+        <view class="todo-comment">
+            <!-- 可以被选中 -->
+            <text selectable>{{item.comment}}</text>
+        </view>
+        <view class="todo-done">
+            <view class="todo-pd">
+                <button class="view-box-btn todo-done-btn" data-id="{{item.id}}" bindtap="unDoneHandle">未完成</button>
+            </view>
+            <view class="todo-pd">
+                <button class="view-box-btn todo-done-btn delete" data-id="{{item.id}}" bindtap="deleteHandle">删除</button>
+            </view>
+        </view>
+    </view>
+</block>

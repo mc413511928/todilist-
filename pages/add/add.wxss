@@ -1,0 +1,19 @@
+/* pages/add/add.wxss */
+@import "/common.wxss";
+
+page {
+    background-color: #6a8caf;
+}
+
+.todo-add-btn {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 400;
+}
+
+.todo-add-btn.hover {
+    background-color: #fff;
+    color: #000;
+}

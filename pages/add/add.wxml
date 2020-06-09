@@ -1,0 +1,10 @@
+<!--pages/add/add.wxml-->
+<view class="view-box">
+    <textarea bindinput="inputChange" data-name="content" value="{{content}}" placeholder="请输入内容" maxlength="360"></textarea>
+</view>
+<view class="view-box">
+    <input bindinput="inputChange" data-name="comment" value="{{comment}}" placeholder="请输入备注"></input>
+</view>
+<button bindtap="addHandler" class="todo-add-btn">
+    <text space="emsp">添 加</text>
+</button>

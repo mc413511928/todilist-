@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<scroll-view scroll-y class="todo-list" style="height: {{viewHeight}}px;">
+    <view wx:if="{{!list.length}}" class="empty">还没有添加任务</view>
+    <block wx:else>
+        <view class="view-box" wx:for="{{list}}" wx:key="id">
+            <view class="todo-time">{{item.dateTime}}</view>
+            <view class="todo-content">
+                <!-- 可以被选中 -->
+                <text selectable>{{item.content}}</text>
+            </view>
+            <view class="todo-comment">
+                <!-- 可以被选中 -->
+                <text selectable>{{item.comment}}</text>
+            </view>
+            <view class="todo-done">
+                <button class="view-box-btn" data-id="{{item.id}}" bindtap="doneHandle">完成</button>
+            </view>
+        </view>
+    </block>
+</scroll-view>
+<view class="todo-add">
+    <mp-icon type="field" icon="add2" color="#fff" size="{{50}}" bindtap="toAddHandler"></mp-icon>
+    <mp-icon type="field" icon="done2" color="#fff" size="{{50}}" bindtap="toDoneHandler"></mp-icon>
+</view>

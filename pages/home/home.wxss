@@ -1,0 +1,32 @@
+/* pages/home/home.wxss */
+@import "/common.wxss";
+
+page {
+    background-color: #75b79e;
+}
+
+.todo-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.todo-content {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.todo-comment {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.todo-done {
+    text-align: right;
+}
+
+.todo-add {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}

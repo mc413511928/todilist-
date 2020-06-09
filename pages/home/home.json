@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "mp-icon": "../../components/icon/icon"
+      },
+    "navigationBarBackgroundColor": "#75b79e",
+    "navigationBarTitleText": "超级任务",
+    "navigationBarTextStyle": "white"
+}

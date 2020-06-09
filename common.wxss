@@ -1,0 +1,22 @@
+.view-box {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 15px -8px #000;
+}
+
+.view-box-btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    width: 48px !important;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #a7e9af;
+}
+
+.empty {
+    text-align: center;
+    color: #fff;
+}
